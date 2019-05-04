@@ -1,9 +1,11 @@
 #!/bin/bash
 ################################################################################
 #                  iroffer-dinoex auto-install script v1.0                     #
-# This is a simple iroffer auto-install script based off of the original with  #
-# a few changes to help automate my own laziness, it'll also help anyone who   #
-# wants to setup a bot and link it to #NIBL but don't know how.                #
+# This is a simple iroffer auto-install script based off of the original       #
+# guide by dinoex, with a few changes to help automate my own laziness         #
+# it'll also help anyone who wants to setup a bot but doesn't know how.        #
+# This will fully install iroffer-dinoex (https://iroffer.net/) and all        #
+# dependencies, as well as setup a basic crontab to start on server boot.      #
 #                                                                              #
 # The following packages will be installed: nano                               #
 #                                           make                               #
@@ -20,7 +22,7 @@
 # are you using something ancient in the first place? Get your shit together.  #
 #                                                                              #
 # We'll be installing this via a user account and in the /home/ directory just #
-# for easy of use, I'd personally change this, but hey. You need this.         #
+# for ease of use, I highly recommend you change the installation folder.      #
 ################################################################################
 
 echo "We're about to install iroffer..."
