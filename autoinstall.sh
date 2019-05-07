@@ -12,6 +12,9 @@
 #                                           gcc                                #
 #                                           curl                               #
 #                                           cron                               #
+#                                           libc-dev                           #
+#                                           libminiupnpc-dev                   #
+#                                           libmaxminddb-dev                   #
 #                                           libgeoip-dev                       #
 #                                           openssl libssl-dev                 #
 #                                           libcurl4-openssl-dev               #
