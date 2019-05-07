@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-#                  iroffer-dinoex auto-install script v1.0                     #
+#                  iroffer-dinoex auto-install script v1.1                     #
 # This is a simple iroffer auto-install script based off of the original       #
 # guide by dinoex, with a few changes to help automate my own laziness         #
 # it'll also help anyone who wants to setup a bot but doesn't know how.        #
@@ -59,7 +59,7 @@ sudo cp bot.config ..
 #Setting permissions
 cd ..
 sudo chmod 600 bot.config
-sudo chmod 700.
+sudo chmod 775 .
 
 #Cleaning up a little
 sudo rm -rf iroffer-dinoex-snap.tar.gz
