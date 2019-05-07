@@ -29,7 +29,7 @@ echo "We're about to install iroffer..."
 read -rsn1 -p"Press any key to continue";echo
 
 #First we install the dependencies
-sudo apt-get install nano make gcc cron openssl libssl-dev libcurl4-openssl-dev ruby rails ruby-dev libruby curl libgeoip-dev -y
+sudo apt-get install nano make gcc cron openssl libssl-dev libcurl4-openssl-dev ruby rails ruby-dev libruby curl libgeoip-dev libc-dev libminiupnpc-dev libmaxminddb-dev -y
 
 #Now we download the source and make the folders
 #We are using the latest 3.32 beta version (Snap) for this
