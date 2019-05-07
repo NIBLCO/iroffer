@@ -89,4 +89,4 @@ sudo chmod +x autostart.sh
 
 #Now we're going to echo an incredibly simple crontab to start iroffer whenever the server boots up
 #Expect something better in the next version, such as an init or just modifying rc.local but eh
-( crontab -l ; echo "@reboot sh /$HOME/iroffer/iroffer.sh" ) | crontab -
+( crontab -l ; echo "@reboot sh /$HOME/iroffer/autostart.sh" ) | crontab -
