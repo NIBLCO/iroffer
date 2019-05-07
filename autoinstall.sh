@@ -58,8 +58,7 @@ sudo cp bot.config ..
 
 #Setting permissions
 cd ..
-sudo chmod 600 sample.config
-sudo chmod 600 basic.config
+sudo chmod 600 bot.config
 sudo chmod 700.
 
 #Cleaning up a little
@@ -73,7 +72,7 @@ sudo rm -rf iroffer-dinoex-snap/
 sudo mkdir logs
 sudo chmod -R 775 logs/
 cd ..
-sudo mkdir files/
+sudo mkdir files
 sudo chmod -R 775 files/
 
 #Now we create the auto-start script and set it to be executable
@@ -84,13 +83,10 @@ echo "#!/bin/sh" >> autostart.sh
 echo "cd $HOME/iroffer" >> autostart.sh
 echo "./iroffer -b bot.config" >> autostart.sh
 
-echo "iroffer.sh has been created - Please edit this to suit your needs."
+echo "autostart.sh has been created - Please edit this to suit your needs."
 
-sudo chmod +x iroffer.sh
+sudo chmod +x autostart.sh
 
 #Now we're going to echo an incredibly simple crontab to start iroffer whenever the server boots up
-#Expect something better in the next version, such as an init or just modifying rc.local but eh.
+#Expect something better in the next version, such as an init or just modifying rc.local but eh
 ( crontab -l ; echo "@reboot sh /$HOME/iroffer/iroffer.sh" ) | crontab -
-
-#Everything is done, just edit your bot config and start it up!
-read -rsn1 -p"Installation finished, get your ass in #NIBL";echo
